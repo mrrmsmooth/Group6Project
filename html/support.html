@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupportS</title>
+    <link rel="stylesheet" href="/css/sustyle.css">
+    
+</head>
+<body>
+    <h1>Support</h1>
+    <form action="" method="post">
+    <fieldset>
+        <div>
+            <label for="problemak">Próbléma típusa:</label>
+            <select name="problemak" id="problemak" class="kotelezo">
+                <option value="5" selected></option>
+                <option value="1">Weboldal nem válaszol</option>
+                <option value="2">Fizetési Próbléma</option>
+                <option value="3">Információ hiány</option>
+                <option value="4">Egyéb</option>
+                
+            </select>
+        </div>
+        
+        <div>
+            <label for="email" >E-mail cím:</label>
+            <input class="kotelezo" type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="uzenet">Üzenet:</label>
+            <textarea name="uzenet" id="uzenet" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" checked name="elfogad" id="elfogad" value="elfogadva">
+            <label for="elfogad" style="display: inline;">Elfogadja hogy a válasz vagy megoldás a próblémára eltarthat pár napig?</label>
+        </div>
+        <div>
+            <input type="submit" value="Próbléma bejelentése">
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>
